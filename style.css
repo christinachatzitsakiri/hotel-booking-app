@@ -1,0 +1,300 @@
+/* SELIDA*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+
+/*BOOKING FORM*/
+form{
+    background: #fff;
+    padding: 50px;
+    border: 1px solid #fff;
+    width: 70%;
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+
+h1{
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+    align-self: flex-start; /*aristera*/
+}
+
+form h2{
+    text-align: center;
+    color: #0c1579;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* LABELS FOR BOOKINGFORM*/
+label {
+    display: block;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #160d5a;
+}
+
+input,select{
+    width: calc(100% - 10px);
+    padding: 8%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+/*BUTTON BOOK NOW*/
+button {
+    background-color: #1a0883;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #100228;
+}
+
+#reservationDetails {
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#reservationDetails .details {
+    flex: 1;
+    text-align: left;
+}
+
+#reservationDetails .buttons {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+#reservationDetails h2 {
+    color: #022209;
+}
+
+#reservationDetails p {
+    font-size: 16px;
+    color: #333;
+}
+
+.reservation-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    max-width: 50%;
+}
+
+#roomImage {
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+
+
+.room-button {
+    background-color: #1111a5;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 40px;
+    float: right; 
+    transition: background-color 0.3s;
+    
+}
+
+.room-button:hover {
+    background-color: #070463;
+}
+
+#personalDetailsForm {
+    background: #f9f9f9; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#personalDetailsForm label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #110335;
+}
+
+#personalDetails {
+    background: #f9f9f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#successMessage {
+    background-color: #eaffea;
+    border: 2px solid green;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    color: green;
+    font-size: 18px;
+}
+
+#successMessage h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#successMessage p {
+    font-size: 16px;
+}
+
+#hotelButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 20px;
+    width: auto;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 10px;  
+    right: 10px; 
+}
+
+#hotelButton:hover {
+    background-color: #45a049;
+}
+
+#hotelLoginForm {
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#hotelLoginForm input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#hotelLoginForm button {
+    background-color: #0ae63a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reservationsTable {
+    background-color: white;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+#reservationsTable {
+    display: none;
+}
+
+.goToHomeButton {
+    background-color: #1111a5;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+    
+
+
+#reservationsPage {
+    text-align: center;
+    position: relative;
+}
+
+#goToHomeButton:hover {
+    background-color: #4444e6; /
+}
+
+
+
+#cancelForm {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+
